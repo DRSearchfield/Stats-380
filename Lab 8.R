@@ -1,3 +1,4 @@
+commit()
 ## Extract numeric amount values from 'lines', which
 ## is a vector of character values that contain amount values
 getAmounts <- function(lines) {
@@ -29,4 +30,5 @@ containsName <- function(line) {
 ## is a vector of character values that contain "names"
 getNames <- function(lines) {
   gsub("^[[:digit:]]*[[:space:]]*|,.+", "", lines)
+
 }
